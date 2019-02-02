@@ -4,7 +4,7 @@ const Query = new GraphQLObjectType({
   name: "Query",
   fields: {
     hello: {
-      type: new GraphQLNonNull(GraphQLString),
+      type: new GraphQLNonNull(GraphQLString), // GraphQLNonNull จะทำให้ไม่มี null ใน schema
       args: {
         name: {
           type: new GraphQLNonNull(GraphQLString)
